@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.btn {
+  padding: 1rem 3rem;
+  background-color: $main;
+  border-radius: $border-radius;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  transition: all 0.3s linear;
+  font-family: inherit;
+  font-weight: 400;
+
+  &:hover {
+    background-color: $dark-main;
+  }
+
+  &--outline {
+    color: $main;
+    background: rgba(248, 182, 2, 0.1);
+    border: 0.15rem solid $main;
+
+    &:hover {
+      background-color: $dark-main;
+      color: #fff;
+      border: 0.15rem solid $dark-main;
+    }
+  }
+
+  &--empty {
+    color: $main;
+    background-color: #fff;
+    padding: 0.8rem;
+
+    &:hover {
+      color: $dark-main;
+      background-color: #fff;
+    }
+  }
+}

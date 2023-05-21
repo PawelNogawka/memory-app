@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.photo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &__label {
+    color: $dark-text;
+    font-size: 1.6rem;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: 9rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: $border-radius;
+
+    &--white {
+      background-color: #fff;
+    }
+
+    img {
+      width: 18rem;
+      height: 18rem;
+      border-radius: $border-radius;
+      align-self: flex-start;
+    }
+
+    span {
+      color: $light-text;
+      font-size: 1.5rem;
+    }
+
+    svg {
+      font-size: 2.7rem;
+      color: $light-text;
+    }
+  }
+  &__remove-img {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    background: rgba(255, 96, 107, 0.1);
+    border: 0.1rem solid $error;
+
+    svg {
+      font-size: 1.8rem;
+      color: $error;
+    }
+  }
+}

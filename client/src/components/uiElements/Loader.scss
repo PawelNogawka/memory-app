@@ -1,0 +1,16 @@
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1111;
+
+  &--big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background-color: #fff;
+  }
+}

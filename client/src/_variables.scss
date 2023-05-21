@@ -1,0 +1,27 @@
+//colors
+
+$main: #f8b602;
+$dark-main: #8c6239;
+$dark-text: #41474a;
+$light-text: #838383;
+$border-color: #d0d0d2;
+$gray: #f5f5f5;
+$error: #eb5757;
+$success: #28a745;
+
+// shadows
+
+$card-shadow: 0px 24px 45px rgba(0, 0, 0, 0.05);
+$nav-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+
+// gradients
+$backdrop-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.7) 0%,
+  rgba(0, 0, 0, 0.4) 100%
+);
+
+// other
+
+$border-radius-big: 3rem;
+$border-radius: 1.6rem;

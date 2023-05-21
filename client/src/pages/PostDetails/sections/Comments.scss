@@ -1,0 +1,63 @@
+@import "../../../variables";
+
+.comments {
+  margin-top: 2rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.comment {
+  flex: 1 1 40rem;
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      border-radius: 50%;
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+  }
+
+  &__author-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__author-name {
+    color: $dark-text;
+  }
+
+  &__author-date {
+    font-size: 1.5rem;
+    color: $light-text;
+  }
+
+  &__message {
+    color: $dark-text;
+  }
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 65rem;
+
+  &__heading {
+    font-size: 2rem;
+    color: $dark-text;
+  }
+
+  button {
+    align-self: start;
+  }
+}

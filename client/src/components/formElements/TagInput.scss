@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.tag-input {
+  border-radius: $border-radius;
+  border: 0.1rem solid $light-text;
+  background-color: white;
+  color: $dark-text;
+
+  &--padding {
+    padding: 0.8rem 1.2rem;
+  }
+
+  &:focus-within {
+    border: 0.1rem solid $main;
+  }
+
+  &__input {
+    padding: 0.8rem 1.2rem;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    color: $dark-text;
+    font-size: 1.6rem;
+    font-family: inherit;
+
+    &--margin {
+      margin-top: 0.7rem;
+    }
+
+    &::placeholder {
+      color: $light-text;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    padding: 0.4rem 0.7rem;
+    min-width: 5rem;
+    text-align: center;
+    border-radius: $border-radius;
+    font-size: 1.4rem;
+    background: rgba(248, 182, 2, 0.1);
+    border: 0.1rem solid $main;
+    color: $main;
+
+    span {
+      margin-top: 0.3rem;
+    }
+
+    svg {
+      color: $main;
+      font-size: 1.3rem;
+    }
+  }
+}

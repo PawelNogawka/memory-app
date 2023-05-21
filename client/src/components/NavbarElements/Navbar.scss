@@ -1,0 +1,55 @@
+@import "../../variables";
+
+.navbar {
+  margin-bottom: 1.5rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: min(5vw, 3.3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark-text;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  &__user-box {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+  }
+
+  &__user-name {
+    color: $dark-text;
+  }
+
+  &__user-btns {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__user-add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    background-color: $gray;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    color: $dark-text;
+  }
+}

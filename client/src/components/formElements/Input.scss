@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    input,
+    textarea {
+      padding: 0.8rem 1.2rem;
+      border-radius: $border-radius;
+      border: 0.1rem solid $light-text;
+      background-color: white;
+      color: $dark-text;
+      font-size: 1.6rem;
+      font-family: inherit;
+  
+      &::placeholder {
+        color: $light-text;
+        font-weight: 400;
+        font-size: 1.4rem;
+      }
+  
+      &:focus {
+        outline: 0;
+        box-shadow: $main 0px 1px 1px, $main 0px 0px 0px 1px;
+      }
+    }
+  
+    textarea {
+      min-height: 10rem;
+      max-height: 25rem;
+      min-width: 100%;
+      max-width: 100%;
+    }
+  
+    label {
+      color: $dark-text;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  
+    .error {
+      // color: $error;
+      font-size: 1.4rem;
+    }
+  }

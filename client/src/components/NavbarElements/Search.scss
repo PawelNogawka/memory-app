@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.search {
+  position: relative;
+  width: 25rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $light-text;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+
+    svg {
+      color: $main;
+    }
+
+    &:hover {
+      color: $main;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+}

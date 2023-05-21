@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.tag {
+  padding: 0.4rem 0.7rem;
+  min-width: 5rem;
+  text-align: center;
+  border-radius: $border-radius;
+  font-size: 1.4rem;
+  background: rgba(248, 182, 2, 0.1);
+  border: 0.1rem solid $main;
+  cursor: pointer;
+
+  button {
+    color: $main;
+  }
+}
