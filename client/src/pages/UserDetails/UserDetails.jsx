@@ -47,6 +47,10 @@ const UserDetails = () => {
 
   return (
     <main>
+      <Wrapper>
+        <h1 className="section-heading">{` User details: ${posts[0].creator.name}`}</h1>
+        </Wrapper>
+      
       {addedPosts.length > 0 && <AddedPosts posts={addedPosts} />}
       {likedPosts.length > 0 && <LikedPosts posts={likedPosts} />}
       {commentedPosts.length > 0 && <CommentedPosts posts={commentedPosts} />}
